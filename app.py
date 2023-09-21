@@ -12,8 +12,14 @@ for states in data["states"]:
 with open("no_area_code_states.json", "w") as f:
     json.dump(data, f, indent=2)
 
+for states in data["states"]:
+    del states["name"]
+
 with open("no_name_states.json", "w") as f:
     json.dump(data, f, indent=2)
+
+for states in data["states"]:
+    del states["abbreviation"]
 
 with open("no_abbreviation_states.json", "w") as f:
     json.dump(data, f, indent=2)
