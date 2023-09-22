@@ -1,6 +1,8 @@
 import json
 import os
 
-cwd = os.getcwd()
+path = "/home/ubuntu/JSON-INTRO"
+dir_list = os.listdir(path)
 
-print("Current working directory: ", cwd)
+print("Files and directories in '", path, "':")
+print(dir_list)
