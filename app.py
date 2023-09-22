@@ -1,6 +1,6 @@
 import json
+import os
 
-with open("hierarchy.json") as f: 
-    hierarchy = json.load(f)
+cwd = os.getcwd()
 
-print(hierarchy[0]["contents"][3]["name"])
+print("Current working directory: ", cwd)
